@@ -47,4 +47,6 @@ Be fully ready to take the CKA exam by January and build muscle memory with Kube
 
          
 # Commands 
+         
+
 
