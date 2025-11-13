@@ -42,11 +42,9 @@ We follow this learning strategy:
 ---
 
 ## 🔥 Goal--help
+## 🔥 Goal--help
 Be fully ready to take the CKA exam by January and build muscle memory with Kubernetes.
 
-
-
-
          
-
+# Commands 
 
