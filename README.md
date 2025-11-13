@@ -2,23 +2,24 @@
 
 This repository documents our preparation for the **Certified Kubernetes Administrator (CKA)** exam.
 
+The objective is to master and feel confortable working with
+
 We follow this learning strategy:
 
-> **Learn → Practice → Teach → Document**
+> **Learn → Practice  → Document → Teach**
 
 ---
 
-## 📁 Structure
+## 📁 Content
 
-| Folder | Focus |
-|--------|--------|
-| `01-cluster-architecture` | Control plane, scheduler, etcd, worker nodes |
-| `02-workloads-and-scheduling` | Deployments, ReplicaSets, Jobs, autoscaling |
-| `03-services-and-networking` | ClusterIP, NodePort, LoadBalancer, Ingress |
-| `04-storage` | PV, PVC, StorageClasses |
-| `05-security` | RBAC, TLS, Network Policies |
-| `cheatsheets/` | kubectl shortcuts & YAML templates |
-| `scripts/` | automation scripts (minikube, kubeadm) |
+
+`01-cluster-architecture` : Control plane, API Server, controller-manager scheduler, etcd, worker nodes 
+`02-workloads-and-scheduling`: Deployments, ReplicaSets, Jobs, autoscaling
+`03-services-and-networking`: ClusterIP, NodePort, LoadBalancer, Ingress 
+`04-storage` PV, PVC, StorageClasses
+`05-security` | RBAC, TLS, Network Policies |
+`cheatsheets/` | kubectl shortcuts & YAML templates |
+`scripts/` | automation scripts (minikube, kubeadm) |
 
 ---
 
@@ -42,6 +43,9 @@ We follow this learning strategy:
 
 ## 🔥 Goal--help
 Be fully ready to take the CKA exam by January and build muscle memory with Kubernetes.
+
+
+
 
          
 
