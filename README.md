@@ -40,45 +40,9 @@ We follow this learning strategy:
 
 ---
 
-## 🔥 Goal
+## 🔥 Goal--help
 Be fully ready to take the CKA exam by January and build muscle memory with Kubernetes.
 
-
-
-📁 cka-zero-to-pro
-│
-├── README.md
-│
-├── 01-cluster-architecture/
-│   ├── notes.md
-│   └── labs/
-│       ├── lab-01-create-deployment.md
-│       └── lab-02-upgrade-cluster.md
-│
-├── 02-workloads-and-scheduling/
-│   ├── notes.md
-│   └── labs/
-│
-├── 03-services-and-networking/
-│   ├── notes.md
-│   └── labs/
-│
-├── 04-storage/
-│   ├── notes.md
-│   └── labs/
-│
-├── 05-security/
-│   ├── notes.md
-│   └── labs/
-│
-├── cheatsheets/
-│   ├── kubectl-shortcuts.md
-│   ├── common-yaml-templates.md
-│   └── troubleshooting.md
-│
-└── scripts/
-    ├── minikube-setup.sh
-    ├── kubeadm-multipass.sh
-    └── cleanup.sh
-
+         
+# Commands 
 
