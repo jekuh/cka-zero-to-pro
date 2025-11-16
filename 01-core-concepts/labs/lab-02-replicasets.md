@@ -5,7 +5,7 @@ ReplicaSet
    ↓ manages or ensures that multiple instances of pods are running at all times 
 3 Pods (if 1 dies, RS makes a new one)
 
-A ReplicaSet is the auto-pod-counter of Kubernetes.
+A ReplicaSet is the **auto-pod-counter** of Kubernetes.
 It ensures that the exact number of Pods you want are always running.(high availability)
 
 ## 🟢 Why it exists
@@ -15,7 +15,7 @@ It ensures that the exact number of Pods you want are always running.(high avail
 ✔ Enables load balancing across multiple pods
 ✔ Can span across multiple nodes in a cluster
 ✔ Deletes extra Pods if more than needed
-✔ Only focuses on HOW MANY Pods exist, not on updates
+✔ Only focuses on **HOW MANY Pods exist**, not on updates
 
 ## 🧠 Memory Hook
 
