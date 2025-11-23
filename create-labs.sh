@@ -55,5 +55,18 @@ create_lab "03-Logging-and-Monitoring/labs" "lab-19-monitor-application-logs.md"
 
 # 04-Application-lifecycle-Management:
 create_lab "04-Application-lifecycle-Management/labs" "lab-20-rolling-updates-rollbacks.md" "Rolling Updates & Rollbacks"
+create_lab "04-Application-lifecycle-Management/labs" "lab-21-commands-and-arguments.md" "Commands & Arguments"
+create_lab "04-Application-lifecycle-Management/labs" "lab-22-environment-variables.md" "Environment Variables"
+create_lab "04-Application-lifecycle-Management/labs" "lab-23-secrets" "Secrets"
+create_lab "04-Application-lifecycle-Management/labs" "lab-24-multi-container-pods.md" "Multi Container Pods" 
+create_lab "04-Application-lifecycle-Management/labs" "lab-25-init-containers.md" "Init Containers"
+create_lab "04-Application-lifecycle-Management/labs" "lab-26-manual-scaling.md" "Manual Scaling"
+create_lab "04-Application-lifecycle-Management/labs" "lab-27-horizontal-pod-autoscaling.md" "Horizontal Pod Autoscaling" 
+create_lab "04-Application-lifecycle-Management/labs" "lab-28-install-vpa.md" "Install VPA"
+create_lab "04-Application-lifecycle-Management/labs" "lab-29-modify-cpu-resources-in-vpa.md" "Modify CPU Resources in VPA"
+
+# 05-Cluster-Maintenance:
+create_lab "05-Cluster-Maintenance/labs" "lab-30-os-upgrades.md" "OS Upgrades"
+create_lab "05-Cluster-Maintenance/labs" "lab-31-cluster-upgrades.md" "Cluster Upgrades"
 # create_lab "03-Another-Topic/labs" "lab-11-another-topic.md" "Another Topic"
 ###########################################
