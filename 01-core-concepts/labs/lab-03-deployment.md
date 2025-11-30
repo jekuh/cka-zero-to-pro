@@ -22,7 +22,8 @@ Deployments manage replica sets, which manage pods, forming a hierarchical struc
 
 
 ## 🧩 Key Commands for Deployments
-
+`k get pods --watch`
+`k get pods --no-headers | wc -l`
   Create a deployments from a file.
 - 📋 `kubectl create -f <deployment-definition-file> `
       `kubectl apply -f deployment-definition.yml`
@@ -42,7 +43,7 @@ Deployments manage replica sets, which manage pods, forming a hierarchical struc
 
 ```yaml
 apiVersion: apps/v1
-kind: Deployment. #take note hear
+kind: Deployment. #take note here
 metadata:
   name: myapp
   labels:
