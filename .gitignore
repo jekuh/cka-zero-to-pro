@@ -1,0 +1,20 @@
+# macOS clutter
+.DS_Store
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Environment files
+.env
+.env.*
+
+# Personal files
+jude-personal-notes 
