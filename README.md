@@ -2,7 +2,7 @@
 
 This repository documents our preparation for the **Certified Kubernetes Administrator (CKA)** exam.
 
-The objective is to master and feel confortable working with
+The objective is to master and feel confortable working with CKA
 
 We follow this learning strategy:
 
@@ -42,7 +42,7 @@ We follow this learning strategy:
 ---
 
 ## 🔥 Goal--help
-Be fully ready to take the CKA exam by January and build muscle memory with Kubernetes.
+Be fully ready to take the CKA exam by December and build muscle memory with Kubernetes commands.
 
          
 # Commands 
