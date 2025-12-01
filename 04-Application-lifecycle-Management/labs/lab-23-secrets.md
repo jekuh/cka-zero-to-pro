@@ -107,6 +107,9 @@ envFrom:
   - secretRef:
       name: db-secret
 ```
+envFrom:
+    - secretRef:
+        name: db-secret
 
 
 ## 7.3 Mount Secret as a file (volume)
@@ -146,3 +149,4 @@ Secret = locker with a key
 - Production systems often use external secret managers.
 
 
+**Notes on SCRET STORE CSI DRIVER**
