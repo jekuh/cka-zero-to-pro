@@ -57,7 +57,7 @@ create_lab "03-Logging-and-Monitoring/labs" "lab-19-monitor-application-logs.md"
 create_lab "04-Application-lifecycle-Management/labs" "lab-20-rolling-updates-rollbacks.md" "Rolling Updates & Rollbacks"
 create_lab "04-Application-lifecycle-Management/labs" "lab-21-commands-and-arguments.md" "Commands & Arguments"
 create_lab "04-Application-lifecycle-Management/labs" "lab-22-environment-variables.md" "Environment Variables"
-create_lab "04-Application-lifecycle-Management/labs" "lab-23-secrets" "Secrets"
+create_lab "04-Application-lifecycle-Management/labs" "lab-23-secrets.md" "Secrets"
 create_lab "04-Application-lifecycle-Management/labs" "lab-24-multi-container-pods.md" "Multi Container Pods" 
 create_lab "04-Application-lifecycle-Management/labs" "lab-25-init-containers.md" "Init Containers"
 create_lab "04-Application-lifecycle-Management/labs" "lab-26-manual-scaling.md" "Manual Scaling"
@@ -66,7 +66,21 @@ create_lab "04-Application-lifecycle-Management/labs" "lab-28-install-vpa.md" "I
 create_lab "04-Application-lifecycle-Management/labs" "lab-29-modify-cpu-resources-in-vpa.md" "Modify CPU Resources in VPA"
 
 # 05-Cluster-Maintenance:
-create_lab "05-Cluster-Maintenance/labs" "lab-30-os-upgrades.md" "OS Upgrades"
+create_lab "05-Cluster-Maintenance/labs" "lab-30-OS-upgrades.md" "OS Upgrades"
 create_lab "05-Cluster-Maintenance/labs" "lab-31-cluster-upgrades.md" "Cluster Upgrades"
+create_lab "05-Cluster-Maintenance/labs" "lab-32-Backup-and-Restore-Methods.md" "Backup and Restore Methods"
 # create_lab "03-Another-Topic/labs" "lab-11-another-topic.md" "Another Topic"
+
+
+# 06-Security
+create_lab "06-Security/labs" "lab-33-view-certificates.md" "View Certificates"
+create_lab "06-Security/labs" "lab-34-certificates-api.md" "Certificates API"
+create_lab "06-Security/labs" "lab-35-kube-config.md" "Kube-Config"
+create_lab "06-Security/labs" "lab-36-role-base-access-controls.md" "Role Base Access Controls"
+create_lab "06-Security/labs" "lab-37-cluster-roles.md" "Cluster Roles"
+create_lab "06-Security/labs" "lab-38-service-accounts.md" "Service Accounts"
+create_lab "06-Security/labs" "lab-39-image-security.md" "Image Security"
+create_lab "06-Security/labs" "lab-40-security-contexts.md" "Security Contexts" 
+create_lab "06-Security/labs" "lab-41-network-policies.md" "Network Policies"
+create_lab "06-Security/labs" "lab-42-custom-resource-definition.md" "Custom Resource Definition"
 ###########################################
