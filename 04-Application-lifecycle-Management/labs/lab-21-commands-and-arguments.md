@@ -52,7 +52,7 @@ spec:
     args: ["1200"]
 
     or 
-   command: [ "sleep",  1200" ]
+   command: [ "sleep",  "1200" ]
     or
     command: 
     - "sleep"
