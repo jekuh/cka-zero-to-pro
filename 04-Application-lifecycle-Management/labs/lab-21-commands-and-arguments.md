@@ -1,5 +1,5 @@
 # Lab 21 – Commands & Arguments
-- Configuring applications comprises of understanding the following concepts:
+Configuring applications comprises of understanding the following concepts:
 - Configuring Command and Arguments on applications
 - Configuring Environment Variables
 - Configuring Secrets
@@ -62,9 +62,16 @@ spec:
 - kubectl replace --force 0f /tmp/kubectl-eidt-74682884994.yaml
 
 # Useful Commands
+ `kubectl get pod ubuntu-sleeper -o yaml | yq '.spec.containers[].command`
+
 # Start the nginx pod using the default command, but use custom arguments
+**for commands**
+ `kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>`
+`k run webapp-green --image=kodekloud/webapp-color --command -- --color=green`
+
+**for just arguments**
 `kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>`
-`kubectl run nginx --image=nginx -- --colour green`
+`k run webapp-green --image=kodekloud/webapp-color  -- --color=green`
 
 # Start the nginx pod using a different command and custom arguments
 `kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>`

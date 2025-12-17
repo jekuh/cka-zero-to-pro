@@ -45,6 +45,10 @@ Stored outside etcd. If PVs are lost:
 ❌ Applications come back  
 ❌ Data does NOT
 ---
+check version
+`kubectl get pods -n kube-system | grep etcd`
+`kubectl exec -n kube-system etcd-controlplane -- etcdctl version`
+
 
 ## 🟢 etcd Backup & Restore (Mandatory)
 
@@ -55,7 +59,7 @@ Stored outside etcd. If PVs are lost:
 ETCDCTL_API=3 etcdctl\
   --endpoints=https://127.0.0.1:2379 \ # points to the etcd server (default: localhost:2379)
   --cacert=/etc/kubernetes/pki/etcd/ca.crt \ # path to the CA cert
-  --cert=/etc/kubernetes/pki/etcd/server.crt \ # path to the Client cert
+  --cert=/etc/kubernetes/pki/etcd/server.crt \ # path to the Client /server cert
   --key=/etc/kubernetes/pki/etcd/server.key \ # path to the Client key
  snapshot save snapshot.db
 ```
@@ -68,18 +72,19 @@ etcdutl backup \
 
 **Checking Snapshot Status**
 You can inspect the metadata of a snapshot file using:
-`etcdctl snapshot status /backup/etcd-snapshot.db \`
+`etcdutl snapshot status  /backup/etcd-snapshot.db \`
  ` --write-out=table`
 This shows details like size, revision, hash, total keys, etc. It is helpful to verify snapshot integrity before restore.
 
 **Restoring ETCD**
- `ETCDCTL_API=3 etcdctl snapshot restore snapshot.db`
-
 Using etcdutl
 To restore a snapshot to a new data directory:
 
-etcdutl snapshot restore /backup/etcd-snapshot.db \
-  --data-dir /var/lib/etcd-restored
+`etcdutl snapshot restore /backup/etcd-snapshot.db --data-dir /var/lib/etcd-restored`
+POINT ETCD TO THE RESTORED DATA
+`vim /etc/kubernetes/manifests/etcd.yaml`
+
+
 To use a backup made with etcdutl backup, simply copy the backup contents back into /var/lib/etcd and restart etcd.
 
 🟢 Persistent Volume Backup
