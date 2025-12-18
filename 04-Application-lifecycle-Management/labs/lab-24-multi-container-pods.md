@@ -48,12 +48,12 @@ This is exactly what Init Containers do.
 
 ## USEFUL COMMANDS
 
-`kubectl apply -f file.yaml`
-`kubectl describe pod podname`
-`kubectl logs podname -c containername`
-`kubectl exec -it podname -c containername -- sh`. 
-`kubectl -n elastic-stack exec -it app -- cat /log/app.log`
-`kubectl get pods -o jsonpath='{.spec.containers[*].name}'`
+- `kubectl apply -f file.yaml`
+- `kubectl describe pod podname`
+- `kubectl logs podname -c containername`
+- `kubectl exec -it podname -c containername -- sh`. 
+- `kubectl -n elastic-stack exec -it app -- cat /log/app.log`
+- `kubectl get pods -o jsonpath='{.spec.containers[*].name}'`
 
 ## 🔧 Init Container — YAML Template
 

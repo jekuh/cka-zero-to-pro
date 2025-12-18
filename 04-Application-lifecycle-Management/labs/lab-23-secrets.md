@@ -48,9 +48,9 @@ Secrets are protected through:
 - Sensitive values stay out of Deployment YAML.
 
 ## 🧠 Memory Hook for types of secrets
-Opaque = simple secrets
-TLS = certificates
-docker-registry = image pull creds
+- Opaque = simple secrets
+- TLS = certificates
+- docker-registry = image pull creds
 
 ## 5. 🛠️ Creating Secrets
 ## 5.1 Create Secret from literals
@@ -107,10 +107,6 @@ envFrom:
   - secretRef:
       name: db-secret
 ```
-envFrom:
-    - secretRef:
-        name: db-secret
-
 
 ## 7.3 Mount Secret as a file (volume)
 ```yaml
