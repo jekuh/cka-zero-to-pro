@@ -41,12 +41,15 @@ env:
 ## METHOD 1 — Load ONE key only
 
 **✔ When you want ONE specific value from a ConfigMap**
+```yaml
 env:
   - name: APP_COLOR
     valueFrom:
       configMapKeyRef:
         name: webapp-config-map
         key: APP_COLOR
+
+  ```
 
 ## 🧠 Memory Hook:
 configMapKeyRef = pick ONE key from ConfigMap
@@ -62,6 +65,7 @@ This loads ALL keys as separate environment variables.
 configMapRef = load whole ConfigMap
 
 ## 4.3 Env vars from Secrets
+```yaml
 env:
   - name: DB_PASSWORD
     valueFrom:
@@ -72,6 +76,8 @@ env:
 envFrom:
   - secretRef:
       name: app-secret
+
+   ```
 
 ## 5. 🟩 What is a ConfigMap?
 
