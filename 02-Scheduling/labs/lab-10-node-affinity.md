@@ -34,7 +34,8 @@ affinity:
       - matchExpressions:
         - key: size
           operator: In
-          values: ["Large"]
+          values:
+          - large
 ```
 ### 🔹 Soft rule – `preferredDuringSchedulingIgnoredDuringExecution
 Pod **prefers** to run on a matching node but can run elsewhere if needed.
@@ -50,8 +51,8 @@ affinity:
           operator: In
           values: ["Large"]
 ```
-- Operators You Can Use
-- Inside matchExpressions:
+**Operators You Can Use Inside matchExpressions**
+
 - In – value must be in list
 - NotIn – value must not be in list
 - Exists – label key must exist (any value)
