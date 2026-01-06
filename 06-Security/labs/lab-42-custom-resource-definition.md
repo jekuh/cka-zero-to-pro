@@ -52,5 +52,10 @@ A **CustomResourceDefinition (CRD)**:
 After a CRD is installed, this works like magic:
 ```bash
 kubectl get <custom-resource>
+```
 
-
+## Useful commands
+- kubectl get crd
+- kubectl describe crd <name>
+- kubectl get <custom-resource>
+- kubectl api-resources

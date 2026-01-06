@@ -170,10 +170,10 @@ Flannel (default mode)
 👉 If CNI doesn’t support it → policy is IGNORED
 
 ## 🔍 Useful Commands (Daily Use)
-kubectl get networkpolicy                 # List policies
-kubectl describe networkpolicy <name>     # Inspect rules
-kubectl get pods --show-labels            # Verify pod labels
-kubectl get nodes -o wide                 # Debug traffic paths
+- kubectl get networkpolicy                 # List policies
+- kubectl describe networkpolicy <name>     # Inspect rules
+- kubectl get pods --show-labels            # Verify pod labels
+- kubectl get nodes -o wide                 # Debug traffic paths
 
 
 
