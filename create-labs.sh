@@ -83,4 +83,18 @@ create_lab "06-Security/labs" "lab-39-image-security.md" "Image Security"
 create_lab "06-Security/labs" "lab-40-security-contexts.md" "Security Contexts" 
 create_lab "06-Security/labs" "lab-41-network-policies.md" "Network Policies"
 create_lab "06-Security/labs" "lab-42-custom-resource-definition.md" "Custom Resource Definition"
+
+# 07-Storage
+create_lab "07-Storage/labs" "lab-43-persistent-volumes-and-claims.md" "Persistent Volumes and Claims"
+create_lab "07-Storage/labs" "lab-44-storage-classes.md" "Storage Classes"
+
+# 08-Networking
+create_lab "08-Networking/labs" "lab-45-explore-environment.md" "Explore Environment"
+create_lab "08-Networking/labs" "lab-46-explore-cni.md" "Explore CNI"
+create_lab "08-Networking/labs" "lab-47-networking-CNIs.md" "Networking CNIs"
+create_lab "08-Networking/labs" "lab-48-service-networking.md" "Service Networking"
+create_lab "08-Networking/labs" "lab-49-core-dns-in-kubernetes .md" "Core DNS in Kubernetes"
+create_lab "08-Networking/labs" "lab-50-ingress-networking-1.md" "Ingress Networking 1"
+create_lab "08-Networking/labs" "lab-51-ingress-networking-2.md" "Ingress Networking 2"
+create_lab "08-Networking/labs" "lab-52-gateway-apis.md" "Gateway APIs"
 ###########################################
