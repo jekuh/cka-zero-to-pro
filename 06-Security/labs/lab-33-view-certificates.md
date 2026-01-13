@@ -112,6 +112,7 @@ etcd	                Server	          etcdserver.crt
 
 **🔍 HOW TO CHECK CERTIFICATE DETAILS (VERY IMPORTANT)**
 View certificate content:
+- anything to do with the kubernetes api server are under the pki directory
 `openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout`
 Look for:
 - Subject (CN) → who this cert belongs to
@@ -120,8 +121,8 @@ Look for:
 - SANs → DNS/IPs the cert is valid for
 
 **🔎 CHECK WHAT CERTS COMPONENTS USE**
-- kube-apiserver:
-`cat /etc/kubernetes/manifests/kube-apiserver.yaml`
+**- kube-apiserver:**
+`cat /etc/kubernetes/manifests/kube-apiserver.yaml`  | grep "\-\-etcd"
 Look for:
 --tls-cert-file
 --tls-private-key-file
@@ -129,7 +130,8 @@ Look for:
 --etcd-certfile
 --etcd-keyfile
 
-- etcd:
+**- etcd:**
+- anything to with the etcd server, try to check under the etcd directory
 `cat /etc/kubernetes/manifests/etcd.yaml`
 Look for:
 --cert-file

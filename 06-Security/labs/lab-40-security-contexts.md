@@ -92,6 +92,7 @@ This is a production-grade baseline.
 ✔ Safer multi-tenant clusters
 
 ## 🔎 Useful Inspection Commands
+- **kubectl exec ubuntu-sleeper -- whoami**  # check the user that is running the container.
 - kubectl describe pod <pod-name>      # See applied securityContext
 - kubectl get pod <pod> -o yaml        # Full security configuration
 - kubectl auth can-i create pods       # Check permissions
